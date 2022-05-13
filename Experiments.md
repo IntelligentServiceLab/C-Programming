@@ -524,6 +524,160 @@ void main()
 
 
 ### <span id="数组">数组</span>  
+
+**【程序填空】题目：下列给定程序中，函数fun的功能是：把形参a所指数组中的奇数按原顺序依次存放到a[0]、a[1]、a[2]、……中，把偶数从数组中删除，奇数个数通过函数值返回。**
+
+例如：若a所指数组中的数据最初排列为：9、1、4、2、3、6、5、8、7，删除偶数后a所指数组中的数据为：9、1、3、5、7，返回值为5。
+```c
+#include    <stdio.h>
+#define    N    9
+
+int fun(int  a[], int  n)
+{        
+        int  i,j;
+        j = 0;
+        for (i=0; i<n; i++)
+/***********SPACE***********/
+                if (a[i]%2==【?】)
+                {
+/***********SPACE***********/
+                        a[j] = a[i]; 【?】;
+                }
+/***********SPACE***********/
+        return 【?】;
+}
+main()
+{  
+        int  b[N]={9,1,4,2,3,6,5,8,7}, i, n;
+        printf("\nThe original data  :\n");
+        for (i=0; i<N; i++)  printf("%4d ", b[i]);
+        printf("\n");
+        n = fun(b, N);
+        printf("\nThe number of odd  : %d \n", n);
+        printf("\nThe odd number  :\n");
+        for (i=0; i<n; i++)  printf("%4d ", b[i]);
+        printf("\n");
+}
+```
+**【程序填空】题目：给定程序中，函数fun的作用是：统计整型变量m中各数字出现的次数，并存放到数组a中，其中：a[0]存放0出现的次数，a[1]存放1出现的次数，…… a[9]存放9   出现的次数。  
+
+例如：若m为14579233，则输出结果应为：0,1,1,2,1,1,0,1,0,1,   
+
+```c
+#include  <stdio.h>
+
+void fun( int  m, int  a[10])
+{  
+        int  i;
+        for (i=0; i<10; i++)
+/***********SPACE***********/
+                【?】= 0;
+        while (m > 0)
+        {
+/***********SPACE***********/
+                i = 【?】;
+                a[i]++;
+/***********SPACE***********/
+                m = 【?】;
+        }
+}
+main()
+{  
+        int  m,  a[10],i;
+        printf("请输入一个整数 :  ");  
+        scanf("%d", &m);
+        fun(m, a);
+        for (i=0; i<10; i++) 
+                printf("%d,",a[i]); 
+        printf("\n");
+}
+```
+
+**【程序填空】题目：给定程序中，函数fun的功能是：在任意给定的9个正整数中找出按升序排列时处于中间的数，将原数据序列中比该中间数小的数用该中间数替换，位置不变，在  主函数中输出处理后的数据序列，并将中间数作为函数值返回。**
+
+例如：有9个正整数：1  5  7  23  87  5  8  21  45   按升序排列时的中间数为：8
+
+     处理后主函数中输出的数列为：8  8  8  23  87  8  8  21  45
+
+```c
+#include  <stdio.h>
+#define    N    9
+
+int fun(int  x[])
+{  
+        int  i,j,k,t,mid,b[N];
+        for(i=0;i<N;i++)
+                b[i]=x[i];
+        for(i=0;i<=N/2;i++)
+        {  
+                k=i;
+                for(j=i+1;j<N;j++)
+                        if(b[k]>b[j])  
+                                k=j;
+                if(k != i )
+                {  
+                        t=b[i]; 
+/***********SPACE***********/
+                        b[i]=【?】; 
+                        b[k]=t;
+                }
+        }
+/***********SPACE***********/
+        mid=b[【?】];
+        for(i=0; i<N; i++)
+/***********SPACE***********/
+                if(x[i] 【?】 mid) 
+                        x[i]=mid;
+        return  mid;
+}
+main()
+{ 
+        int  i, x[N]={1,5,7,23,87,5,8,21,45};
+        for(i=0; i<N; i++) 
+                printf("%d ",x[i]);
+        printf("\nThe mid data is: %d\n",fun(x));
+        for(i=0; i<N; i++)  
+                printf("%d ",x[i]);
+        printf("\n");
+}
+```
+
+**【程序填空】题目：求数组a[5]中相邻元素的最大公约数，并保存到数组b[5]中(a[4]与a[0]看作相邻元素)。**
+
+例如：a[5]={18,66,38,87,15}    b[5]={6,2,1,3,3}
+      
+注意：除要求填空的位置之外，请勿改动程序中的其他内容。且不能使用C语言的库函数
+
+```c
+#include <stdio.h>
+#define  M  5
+
+void Calculate(int a[],int n,int b[])
+{
+    int i,x,y,r;
+    for(i=0;i<n;i++)
+    {
+        x=a[i];
+/***********SPACE***********/
+        y=a[【?】];
+        do
+        { 
+/***********SPACE***********/
+            【?】;
+            x=y;
+            y=r;
+        }while(r);
+        b[i]=x;
+    }
+}
+void  main()
+{
+    int  i,n=5,a[5]={18,66,38,87,15},b[5]={0};
+    Calculate(a,n,b);
+    for(i=0;i<n;i++)
+        printf("%3d、%3d的最大公约数：%3d\n",a[i],a[(i+1)%n],b[i]);
+}
+```
 ### 【程序改错12】
 **功能：在一个一维整型数组中找出其中最大的数及其下标。**
 ```c
@@ -813,6 +967,57 @@ main()
   printf("There are %d char in the new string.",s);
 }
 ```
+
+**【程序设计】题目：（一维数组）将1－200中所有11的倍数存放到一个一维数组中，并输出。**
+```c
+#include <stdio.h>
+void main()
+{        
+        int i,j=0,a[100];
+
+       
+       /**********Program**********/
+
+
+
+
+
+
+
+       /**********  End  **********/
+
+       for(i=0;i<j;i++)
+                printf("%d ",a[i]);
+        printf("\n");
+}
+```
+
+**【程序设计】题目：（一维数组）有n个已经按由小到大排好序的整数，再输入一个整数，将其插入到这批数据中，要求插入该元素后仍然按由小到大的顺序排列。**
+```c
+#include <stdio.h>
+#define N 11
+void main()
+{
+        int a[N],x,p;
+        int i;
+        printf("Please input %d numbers:",N-1);
+        for(i=0;i<=N-2;i++)
+                scanf("%d",&a[i]);
+        printf("Please input x to be intert:");
+                scanf("%d",&x);
+
+        /**********Program**********/
+
+
+
+        /**********  End  **********/
+
+        for(i=0;i<=N-1;i++)//结果
+                printf("%5d",a[i]);
+        printf("\n");
+}
+```
+
 ### <span id="指针">指针</span>  
 
 
