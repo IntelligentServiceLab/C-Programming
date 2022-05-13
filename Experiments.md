@@ -194,7 +194,8 @@ main()
 ```  
 
 **【程序设计】题目：从键盘输入实数x，按照所示的公式计算并输出y值：**
-<center><a href="images/image1.jpg"  title=""><img src="images/image1.jpg" width="300"/></a></center>
+
+<center><a href="images/image1.jpg"  title=""><img src="images/image1.jpg" width="200"/></a></center>
 
 ```c   
 #include <stdio.h>
