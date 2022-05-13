@@ -469,7 +469,56 @@ main()
         printf("The result is : %5.2f\n",sum);
 }
 ```
+**【程序设计】功能：编写函数fun求sum=d+dd+ddd+……+dd...d(n个d)，其中d为1-9的数字。**
 
+例如：3+33+333+3333+33333(此时d=3,n=5)，d和n在主函数中输入。
+
+```c
+#include <stdio.h>
+
+long int fun(int d,int n)
+{
+  /**********Program**********/
+  
+  
+  /**********  End  **********/
+}
+
+main()
+{ 
+  int d,n;
+  long sum,fun();
+  printf("d=");
+  scanf("%d",&d);
+  printf("n=");
+  scanf("%d",&n);
+  sum=fun(d,n);
+  printf("sum=%ld\n",sum);
+ }
+```
+**【程序设计】功能：计算并输出给定整数n的所有因子之和（不包括1与自身）。注意：n的值不大于1000。**
+
+例如：n的值为855时，应输出704。
+
+```c
+#include <stdio.h>
+   
+int fun(int n)
+{
+/**********Program**********/
+
+
+
+
+ 
+/**********  End  **********/  
+}
+
+void main()
+{
+        printf("s=%d\n",fun(855));
+}
+```
 
 
 ### <span id="数组">数组</span>  
