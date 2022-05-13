@@ -173,7 +173,7 @@ main ( )
 
 **【程序填空】题目：函数fun的功能是：计算公式的前n项之和。若x＝2.5，n＝15时，函数值为1.917914。**  
 
-<center><a href="images/image2.jpg"  title=""><img src="images/image1.jpg" width="200"/></a></center>
+<center><a href="images/image2.jpg"  title=""><img src="images/image2.jpg" width="200"/></a></center>
 
 ```c
 #include    <stdio.h>
