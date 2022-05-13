@@ -1019,5 +1019,128 @@ void main()
 ```
 
 ### <span id="指针">指针</span>  
+**【程序填空】题目：使用指向变量的指针编写交换两个变量值函数，按主调函数的调用形式编写。
+```c
+void swap();
+void main()
+{  int x,y;
+   printf("输入两个整数 x,y \n");
+   scanf("%d%d",&x,&y);
+   swap(&x,&y);
+   printf("x=%dy=%d",x,y);  }
+void swap( int *p , int *q  )
+{  int t;
+   t=*p;
+/***********SPACE***********/
+       【?】; 
+/***********SPACE***********/
+       【?】 ;  }
+```
+
+**【程序填空】题目：给定程序中，函数fun的功能是：调用随机函数产生20个互不相同的整数放在形参a所指数组中(此数组在主函数中已置0)。**
+```c
+#include  <stdlib.h>
+#include  <stdio.h>
+#define   N  20
+
+void  fun( int  *a)
+{ 
+        int  i, x, j=0;
+        x=rand()%20;
+/***********SPACE***********/
+        while (j<【?】)
+        {  
+                for(i=0; i<j; i++ )
+                        if( x==a[i] ) 
+/***********SPACE***********/
+                                【?】;
+/***********SPACE***********/
+                if( i==【?】)
+                { 
+                        a[j]=x; 
+                        j++; 
+                }
+                x=rand()%20;
+        }
+}
+main()
+{ 
+        int  x[N]={0} ,i;
+        fun( x );
+        printf("The result :  \n");
+        for( i=0; i<N; i++ )
+        {
+                printf("%4d",x[i]);
+                if((i+1)%5==0)
+                        printf("\n");
+        }
+        printf("\n\n");
+}
+```
+
+**【程序改错】功能：输入一个字符串，过滤此串，滤掉字母字符，并统计新生成串中包含的字符个数。
+
+例如：输入的字符串为ab234$df4，则输出为：
+
+      The new string is 234$4 
+      
+      There are 5 char in the new string.。
+
+```c
+#include <stdio.h>
+#include <conio.h>
+#define N 80
+
+int fun(char *ptr)
+{
+  int i,j;
+  /**********FOUND**********/
+  for(i=0,j=0;*(ptr+i)!="\\0";i++)
+    /**********FOUND**********/
+    if(*(ptr+i)>'z'|| *(ptr+i)<'a'||*(ptr+i)>'Z' || *(ptr+i)<'A')
+    {
+      /**********FOUND**********/
+      (ptr+j)=(ptr+i);
+      j++;
+    }
+  *(ptr+j)='\0';
+  return(j);
+}
+
+main()
+{
+  char str[N];
+  int s;
+  printf("input a string:");gets(str);
+  printf("The original string is :"); puts(str);
+  s=fun(str);
+  printf("The new string is :");puts(str);
+  printf("There are %d char in the new string.",s);
+}
+```
+
+**【程序设计】题目：编写函数fun,其功能是：将a、b两个两位正整数合并成一个新的整数放在c中。合并的方式是：将a中的十位和个位数依次放在变量c的千位和十位上,b中的十     位和个位数依次放在变量c的个位和百位上。**
+
+例如：当a=45,b=12,调用该函数后c=4251。
+
+注意：请勿改动主函数main和其它函数中的任何内容，仅在函数fun的花括号中填入你编写的若干语句。
+
+```c
+#include <stdio.h>
+
+void fun(int a, int b, long *c)
+{
+/**********Program**********/
 
 
+/**********  End  **********/
+}
+void main()
+{  
+        int  a,b; long  c;
+        printf("Input a, b:");
+        scanf("%d%d", &a, &b);
+        fun(a, b, &c);
+        printf("The result is: %ld\n", c);
+}
+```
