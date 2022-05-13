@@ -117,6 +117,7 @@ main()
   }
 }
 ```
+
 **【程序填空】**题目：输入x、y两个整数，按先大后小的顺序输出x、y。**
 ```c
 #include <stdio.h>
@@ -131,6 +132,76 @@ void main( )
 /***********SPACE***********/
         【?】 ;  }
     printf("x=%d,y=%d\n",x,y); 
+}
+```
+
+**【程序填空】功能：计算并输出high以内最大的10个素数之和，high由主函数传给fun函数，若high的值为100，则函数的值为732。**
+```c
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+int fun( int  high )
+{ 
+  int sum = 0,  n=0,  j,  yes;
+  /***********SPACE***********/
+  while ((high >= 2) && (【?】))
+  {  
+    yes = 1;
+    for (j=2; j<=high/2; j++ )
+      /***********SPACE***********/
+      if (【?】)
+      {
+        yes=0;
+        break;
+      }
+      if (yes)
+      {
+        sum +=high; 
+        n++; 
+      }
+     high--;
+  }
+  /***********SPACE***********/
+  【?】;
+}
+
+main ( )
+{  
+   printf("%d\n", fun (100));
+}
+```
+
+**【程序填空】题目：函数fun的功能是：计算公式的前n项之和。若x＝2.5，n＝15时，函数值为1.917914。**  
+
+<center><a href="images/image2.jpg"  title=""><img src="images/image1.jpg" width="200"/></a></center>
+
+```c
+#include    <stdio.h>
+#include    <math.h>
+
+double fun(double  x, int  n)
+{  
+        double  f, t;   
+        int  i;
+/***********SPACE***********/
+        f = 【?】;
+        t = -1;
+        for (i=1; i<n; i++)
+        {
+/***********SPACE***********/
+                t *= (【?】)*x/i;
+/***********SPACE***********/
+                f += 【?】;
+        }
+        return  f;
+}
+main()
+{  
+        double  x, y;
+        x=2.5;
+        y = fun(x, 15);
+        printf("\nThe result is :\n");
+        printf("x=%-12.6f    y=%-12.6f\n", x, y);
 }
 ```
 
@@ -398,6 +469,8 @@ main()
         printf("The result is : %5.2f\n",sum);
 }
 ```
+
+
 
 ### <span id="数组">数组</span>  
 ### 【程序改错12】
