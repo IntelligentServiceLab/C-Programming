@@ -1146,8 +1146,31 @@ void main( )
    }
 }
 ```
+zonghe3
+
+**【程序设计】题目：编程从键盘输入一个字符串和一个字符，统计该字符串中指定字符出现的次数。**
+```c
+#include <stdio.h>
+#include <string.h>
+void main()
+{        
+        char str[100],c;
+        int i=0,count=0;
+        printf("请输入一个字符串：");
+        gets(str);
+        printf("请输入指定的查找字符：");
+        scanf("%c",&c);
+
+       /**********Program**********/
 
 
+
+       /**********  End  **********/
+
+        printf("%d\n",count);
+}
+
+```c
 
 ### <span id="指针">指针</span>  
 **【程序填空】题目：使用指向变量的指针编写交换两个变量值函数，按主调函数的调用形式编写。**
