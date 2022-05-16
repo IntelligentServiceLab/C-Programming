@@ -406,7 +406,6 @@ int  cyclic_min(int  x[], int n)
   }
   return left;
 }
-```
 
 #include  <stdio.h>
 void  main(void)
@@ -423,7 +422,7 @@ void  main(void)
      loc = cyclic_min(x, n);
      printf("\n\nMinimum is located at x[%d] = %d", loc, x[loc]);
 }
-
+```
 
 **【实验16】【程序改错】功能：写计算级数 ex=1+x+x^2/2!+x^3/3!+ ...+x^n/n! 的值。**
 ```c
