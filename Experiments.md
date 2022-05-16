@@ -172,7 +172,44 @@ void main( )
     printf("x=%d,y=%d\n",x,y); 
 }
 ```
+**【程序填空】题目：函数fun的功能是：统计长整数n的各位上出现数字1、2、3的次数，并用外部(全局)变量c1、c2、c3返回主函数。**
 
+例如：当n＝123114350时，结果应该为：c1＝3  c2＝1  c3＝2。
+
+```c
+#include <stdio.h>
+
+int c1, c2, c3;
+
+void fun(long n)
+{
+        c1=c2=c3=0;
+        while(n)
+        {
+/***********SPACE***********/
+                switch(【?】)
+                {
+                        case 1:
+/***********SPACE***********/
+                                c1++;【?】;
+                        case 2:
+/***********SPACE***********/
+                                c2++;【?】;
+                        case 3: 
+                                c3++;
+                }
+                n/=10;
+        }
+}
+
+main()
+{
+        long n=123114350L;
+        fun(n);
+        printf("\nThe result: \n");
+        printf("n=%ld c1=%d c2=%d c3=%d\n",n,c1,c2,c3); 
+}
+```
 **【程序填空】功能：计算并输出high以内最大的10个素数之和，high由主函数传给fun函数，若high的值为100，则函数的值为732。**
 ```c
 #include <conio.h>
@@ -206,6 +243,52 @@ int fun( int  high )
 main ( )
 {  
    printf("%d\n", fun (100));
+}
+```
+**【程序填空】功能：输入一个整数，计算它可能是哪两个整数的平方和，并打印结果数据。**
+
+如：34是5和3或3和5的平方和。
+
+```c
+#include  <stdio.h>           /* for i/O functions        */
+#include  <stdlib.h>          /* for atoi()               */
+#include  <math.h>            /* for sqrt()               */
+
+void  main(void)
+{
+  int  given;              /* the given number         */
+  int  row, column;        /* row and column indicators*/
+  int  count;              /* number of solutions      */
+  char line[100];
+  printf("\nRepresenting a Given Number as the Sum of Two Squares");
+  printf("\n=====================================================\n");
+  printf("\nAn integer Please ---> ");
+  gets(line);
+  given = atoi(line);
+  printf("\nCount      X      Y");
+  printf("\n-----  -----  -----");
+  row    = 1;              /* starts from far enough   */
+  column = (int) (sqrt((double) given) + 0.5);
+  count  = 0;              /* so solution yet          */
+  while (row <= given && column > 0)  /* scan down...  */
+    if (row*row + column*column == given) 
+    {
+      /***********SPACE***********/
+      【?】;                                        
+      printf("\n%5d%7d%7d", count, row, column);
+      row++;
+      column--;
+    }
+    else if (row*row + column*column > given)
+      /***********SPACE***********/
+      【?】;                                        
+    else
+      /***********SPACE***********/
+      【?】;                                        
+  if (count == 0)
+    printf("\n\nSorry, NO ANSWER found.");
+  else
+    printf("\n\nThere are %d possible answers.",count);
 }
 ```
 
@@ -242,6 +325,46 @@ main()
         printf("x=%-12.6f    y=%-12.6f\n", x, y);
 }
 ```
+
+**【程序填空】功能：用等分法在有序的循环数组中，找到最小元素的位置。**
+
+```c
+#include  <stdio.h>
+int  cyclic_min(int  x[], int n)
+{
+  int  left  = 0;
+  int  right = n - 1;
+  int  mid;
+  /***********SPACE***********/
+  while (【?】) 
+  {                        
+    mid = (left + right)/2;
+    if (x[mid] < x[right])
+      /***********SPACE***********/
+       【?】;                        
+    else
+      /***********SPACE***********/
+      【?】;                        
+  }
+  return left;
+}
+```
+
+#include  <stdio.h>
+void  main(void)
+{
+     int  x[] = { 20, 23, 28, 35, 39, 40, 42, 8, 10, 15, 17, 19};
+     int  n   = sizeof(x)/sizeof(int);
+     int  loc, i;
+
+     printf("\nFind Cyclic Minimum");
+     printf("\n===================");
+     printf("\n\nGiven Array Sorted in Cyclic Fashion :\n");
+     for (i = 0; i < n; i++)
+          printf("%3d", x[i]);
+     loc = cyclic_min(x, n);
+     printf("\n\nMinimum is located at x[%d] = %d", loc, x[loc]);
+}
 
 **【程序改错】功能：写计算级数 ex=1+x+x^2/2!+x^3/3!+ ...+x^n/n! 的值。**
 ```c
