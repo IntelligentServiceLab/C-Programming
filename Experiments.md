@@ -245,6 +245,49 @@ main ( )
    printf("%d\n", fun (100));
 }
 ```
+**【程序填空】题目：下列给定程序中，函数fun的功能是：找出100～999之间(含100和999)所有整数中各位上数字之和为x(x为正整数)的整数，并输出；符合条件的整数个数作为函数值返回。**
+
+例如：当x值为5时，100～999之间各位上数字之和为5的整数有：104、113、122、131、140、203、212、221、230、302、311、320、401、410、500，共有15个。
+
+当x值为27时，各位数字之和为27的整数是：999，只有1个。
+
+```c
+#include  <stdio.h>
+
+int fun(int  x)
+{ 
+        int  n, s1, s2, s3, t;
+        n=0;
+        t=100;
+/***********SPACE***********/
+        while(t<=【?】)
+        {
+                s1=t%10;
+/***********SPACE***********/
+                s2=(【?】)%10; 
+                s3=t/100;
+/***********SPACE***********/
+                if(s1+s2+s3==【?】)
+                { 
+                        printf("%d ",t);
+                        n++;
+                }
+                t++;
+        }
+        return  n;
+}
+main()
+{ 
+        int x=-1;
+        while(x<0)
+        {
+                printf("Please input(x>0): "); 
+                scanf("%d",&x);
+        }
+        printf("\nThe result is: %d\n",fun(x));
+}
+```
+
 **【程序填空】功能：输入一个整数，计算它可能是哪两个整数的平方和，并打印结果数据。**
 
 如：34是5和3或3和5的平方和。
@@ -759,6 +802,31 @@ void main()
         else 
                 printf ("The result :%u\n", fun(x));
 
+}
+```
+**【程序设计】题目：公式e=1+1/1!+1/2!+1/3!+......,求 e 的近似值，精度为10的-6次方。**
+  
+```c
+#include <stdio.h>
+
+//函数功能：计算e,精度为f;
+double fun(double f)
+{
+        double e=1;
+        double jc=1;//求阶乘，并存入jc中
+        /**********Program**********/
+
+
+
+
+
+        /**********  End  **********/
+        return e;
+}
+
+void main()
+{
+        printf("e=%f\n",fun(10e-6));
 }
 ```
 
@@ -1279,6 +1347,41 @@ main()
   printf("The new string is :");puts(str);
   printf("There are %d char in the new string.",s);
 }
+
+```
+**【程序填空】功能：统计一个字符串中的字母、数字、空格和其它字符的个数。**
+
+```c
+#include <stdio.h>
+main ()
+{
+  char s1[80];int a[4]={0};
+  int k;
+  /***********SPACE***********/
+  【?】;
+  gets(s1);
+  /***********SPACE***********/
+  【?】;
+  puts(s1);
+  for(k=0;k<4;k++)
+    printf("%4d",a[k]);
+}
+
+void fun(char s[],int b[])
+{
+  int i;
+  for (i=0;s[i]!='\0';i++)
+  if ('a'<=s[i]&&s[i]<='z'||'A'<=s[i]&&s[i]<='Z') 
+    b[0]++;
+  /***********SPACE***********/
+  else if (【?】) 
+    b[1]++;
+  /***********SPACE***********/
+  else if (【?】 ) 
+    b[2]++;
+  else
+    b[3]++;
+}
 ```
 
 **【程序设计】题目：（一维数组）将1－200中所有11的倍数存放到一个一维数组中，并输出。**
@@ -1447,7 +1550,64 @@ void main()
 
         printf("%d\n",count);
 }
+```
 
+**【程序设计】题目：主函数main()中字符串a，b为测试数据，字符串a中字符已按ASCII码值降序排列，将字符串b中ASCII码为偶数的字符依次插入到字符串a中，使字符串a中字符仍按ASCII码值降序排列。再删除字符串a中的重复字符，使相同字符只出现一次。**
+
+编写程序：
+
+1、编写void insert(char a[],char b[])函数，按上述规则将字符串b中字符插入到字符串a中。
+
+2、编写 void del(char a[])函数，删除字符串a中的重复字符，使相同字符只出现一次。
+
+注意：请勿改动主函数main()中的任何语句。
+```c
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<ctype.h>
+#include<math.h>
+void insert(char a[],char b[])
+{
+/**********Program**********/
+
+
+
+ 
+/**********  End  **********/
+}
+
+void del(char a[])
+{
+/**********Program**********/
+
+
+
+ 
+/**********  End  **********/
+}
+
+void main(){
+    char a[30]="9777532";
+    char b[10]= "987645231";
+    FILE *fp;
+    if((fp=fopen("data.txt","w"))==NULL)
+    {
+        printf("File open error\n");
+        exit(0);
+    }
+    insert(a,b);
+    fprintf(fp,"After insterting:");
+    printf("After insterting:");
+    fprintf(fp,"%s\n",a);
+    printf("%s\n",a);
+    del(a);
+    fprintf(fp,"After deleting:");
+    printf("After deleting:");
+    fprintf(fp,"%s\n",a);
+    printf("%s\n",a);
+    fclose(fp);
+}
 ```
 
 ### <span id="指针">指针</span>  
