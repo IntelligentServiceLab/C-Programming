@@ -20,6 +20,6 @@
   - 程序设计
 
 ## 教材
-蒋清明, 向德生. C语言程序设计教程[M] (第二版). 中国矿业出版社, 2019. [PPT](https://pan.baidu.com/s/1d23lN71rwXf5mR7XNwTNeA?pwd=kang)
+蒋清明, 向德生. C语言程序设计教程[M] (第二版). 中国矿业出版社, 2019. [PPT](https://pan.baidu.com/s/1d23lN71rwXf5mR7XNwTNeA?pwd=kang),[C语言教材1-7章+附录.PDF](C语言教材1-7章+附录.pdf) 
 
 ![教材](images/C语言教材封面.jpg)
