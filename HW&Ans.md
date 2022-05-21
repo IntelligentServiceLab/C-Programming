@@ -1,4 +1,4 @@
-### C Programming Homework
+### C语言作业
 ## **Chapter 1**
 #### 【HW-1】简述C程序从".c"源文件到".exe"可执行文件的生成过程
 ```c
