@@ -28,3 +28,6 @@
 - C语言教材1-7章+附录. [PDF](https://pan.baidu.com/s/1-QGIzcuiCNtn3r0YQyOUnA?pwd=kang)
 
 ![教材](images/C语言教材封面.jpg)
+
+## 进阶
+- LeetCode 101: A LeetCode Grinding Guide (C++ Version) [PDF](https://pan.baidu.com/s/1veqtjN6X8GLRYK0s9bNbBQ?pwd=kang)
