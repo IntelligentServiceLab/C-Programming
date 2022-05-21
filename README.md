@@ -30,4 +30,5 @@
 ![教材](images/C语言教材封面.jpg)
 
 ## 进阶
+- [LeetCode](https://leetcode.com/)
 - LeetCode 101: A LeetCode Grinding Guide (C++ Version) [PDF](https://pan.baidu.com/s/1veqtjN6X8GLRYK0s9bNbBQ?pwd=kang)
