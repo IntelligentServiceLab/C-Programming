@@ -13,9 +13,9 @@
 
 [作业(附参考答案)]()
 
-[程序设计实验](programming-experiments.md)
+[程序设计实验](programming-EXP.md)
 
-[综合实验](comprehensive-experiments.md)
+[综合实验](comprehensive-EXP.md)
 - 程序填空
 - 程序改错
 - 程序设计
