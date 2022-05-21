@@ -13,7 +13,7 @@
 
 ## 练习
 - [作业 (附参考答案)](HW&Ans.md)
-- [程序设计实验](programming-EXP.md)
+- [程序设计实验 (附参考答案)](programming-EXP.md)
 - [程序设计综合实验](comprehensive-EXP.md)
   - 程序填空
   - 程序改错
