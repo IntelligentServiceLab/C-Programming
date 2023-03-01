@@ -30,7 +30,7 @@ int main( )
 	shiwei=n%100/10;
 	gewei=n%10;
 	r=gewei*100+shiwei*10+baiwei;
-	printf("%d逆序数为：%d\n",n,r);
+	printf("%d逆序数为：%d\n",r);
 	return 0;
 } 
 ```
