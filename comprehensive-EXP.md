@@ -1215,6 +1215,10 @@ void main()
   printf("max=%d,position=%d",max,p);
 }
 ```
+> **答案**  
+> int fun(int *a,int *b,int n)  
+> *b=c-a;  
+> max=fun(a,&p,N);  
 
 **【实验-37】【程序改错】功能：利用二维数组输出如图所示的图形。**
 
