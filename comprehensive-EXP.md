@@ -927,6 +927,16 @@ void main()
         printf("e=%f\n",fun(10e-6));
 }
 ```
+> **答案** 
+```c
+int k=1;
+while(1.0/jc>=10e-6)
+{
+	e+=1.0/jc;
+	k++;
+	jc=jc*k;
+}
+```
 
 ### 第五章：<span id="数组">数组</span>  
 
