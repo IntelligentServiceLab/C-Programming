@@ -873,9 +873,6 @@ unsigned fun(unsigned w)
 /**********Program**********/
 
 
-
-
-
 /**********  End  **********/
 }
 void main()
@@ -891,6 +888,18 @@ void main()
                 printf ("The result :%u\n", fun(x));
 
 }
+```
+> **答案** 
+```c
+int i,k=1,s=0;
+while(w>=10)
+{
+	i=w%10;
+	s=s+i*k;
+	k=k*10;
+	w=w/10;
+}
+return s; 
 ```
 
 **【实验-29】【程序设计】题目：公式e=1+1/1!+1/2!+1/3!+......,求 e 的近似值，精度为10的-6次方。**
