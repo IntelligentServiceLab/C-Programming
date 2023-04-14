@@ -440,7 +440,7 @@ void  main(void)
 }
 ```
 > **答案**  
-> left<right 
+> left<right  
 > right=mid  
 > left=mid+1  
 
