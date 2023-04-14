@@ -623,7 +623,7 @@ float fac(int n)
 }
 ```
 > **答案**  
-> i<=10;;  
+> i<=10;  
 > s+=fac(i);  
 > float y=1;  
 > return y;  
@@ -682,7 +682,11 @@ main()
   printf (" s = %f\n ", fun ( x ) );
 }
 ```
-
+> **答案**  
+> double fun(float r)  
+> s=1.0/2*3.14159* r * r;  
+> return s;   
+	
 **【实验-23】【程序改错】功能：根据整型形参m，计算如下公式的值：y=1/2＋1/8＋1/18＋...＋1/(2m\*m)**
 ```c
 #include <stdio.h>
