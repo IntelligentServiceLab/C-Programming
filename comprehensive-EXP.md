@@ -752,6 +752,9 @@ main()
         printf("The result is : %5.2f\n",sum);
 }
 ```
+> **答案**  
+> #define FU(m,n) ((m)/(n))  
+> return(value);    
 
 **【实验-25】【程序设计】功能：编写函数fun求sum=d+dd+ddd+……+dd...d(n个d)，其中d为1-9的数字。**
 
