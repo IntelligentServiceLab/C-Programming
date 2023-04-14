@@ -357,7 +357,10 @@ void  main(void)
     printf("\n\nThere are %d possible answers.",count);
 }
 ```
-
+> **答案**  
+> count++  
+> column--  
+> row++  
 
 **【实验-13】【程序填空】题目：函数fun的功能是：计算公式的前n项之和。若x＝2.5，n＝15时，函数值为17914。**  
 
