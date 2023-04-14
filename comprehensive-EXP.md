@@ -783,6 +783,17 @@ main()
   printf("sum=%ld\n",sum);
  }
 ```
+> **答案** 
+```c
+int i,temp=0;
+long s=0;
+for(i=1;i<=n;i++)
+{
+	temp=temp*10+d;
+	s+=temp;
+}
+return s; 
+```
 
 **【实验-26】【程序设计】功能：计算并输出给定整数n的所有因子之和（不包括1与自身）。注意：n的值不大于1000。**
 
