@@ -422,6 +422,10 @@ int  cyclic_min(int  x[], int n)
   }
   return left;
 }
+> **答案**  
+> left<right 
+> right=mid  
+> left=mid+1  
 
 #include  <stdio.h>
 void  main(void)
