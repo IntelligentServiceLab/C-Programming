@@ -1701,7 +1701,19 @@ void main( )
    }
 }
 ```
-
+> **答案** 
+```c
+numerator=2.0; //分子
+denominator=1.0; //分母
+sum=0.0;
+for(i=1;i<=n;i++)
+{
+	sum=sum+numerator/denominator;
+	temp=numerator;
+	numerator=numerator+denominator;
+	denominator=temp;	
+}
+```
 
 **【实验-48】【程序设计】题目：编程从键盘输入一个字符串和一个字符，统计该字符串中指定字符出现的次数。**
 ```c
