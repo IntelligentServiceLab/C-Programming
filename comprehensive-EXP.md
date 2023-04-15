@@ -1737,6 +1737,7 @@ void main()
         printf("%d\n",count);
 }
 ```
+> **答案** 
 ```c
 while(str[i]!='\0')
 {
