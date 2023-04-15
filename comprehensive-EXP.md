@@ -1646,6 +1646,7 @@ void main()
         printf("\n ");
 }
 ```
+> **答案** 
 ```c
 int i,j,sum=0;
 for(i=0;i<M;i++)
