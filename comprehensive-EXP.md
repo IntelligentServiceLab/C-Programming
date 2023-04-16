@@ -1961,3 +1961,13 @@ void main()
         printf("The result is: %ld\n", c);
 }
 ```
+> **答案** 
+```c
+int gewei,shiwei;
+gewei=a%10;
+shiwei=a/10;
+*c=shiwei*10*10*10+gewei*10;
+gewei=b%10;
+shiwei=b/10;
+*c+=gewei*10*10+shiwei;
+```
