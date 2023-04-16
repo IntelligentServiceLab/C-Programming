@@ -1853,14 +1853,10 @@ main()
 > break  
 > j  
 
-**【实验-51】【程序改错】功能：输入一个字符串，过滤此串，滤掉字母字符，并统计新生成串中包含的字符个数。**
-
-例如：输入的字符串为ab234$df4，则输出为：
-
-      The new string is 234$4 
-      
-      There are 5 char in the new string.。
-
+**【实验-51】【程序改错】功能：输入一个字符串，过滤此串，滤掉字母字符，并统计新生成串中包含的字符个数。**  
+例如：输入的字符串为ab234$df4，则输出为：  
+      The new string is 234$4        
+      There are 5 char in the new string.  
 ```c
 #include <stdio.h>
 #include <conio.h>
